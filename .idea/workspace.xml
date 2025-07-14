@@ -4,16 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="16b444be-5b4a-4726-8b37-cdab3d5f4487" name="Changes" comment="Integrate custom fonts, images, and icons; configure Tailwind with extended theme settings and Nativewind compatibility.">
-      <change afterPath="$PROJECT_DIR$/app/(auth)/_layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/(auth)/sign-in.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/(auth)/sign-up.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/(tabs)/_layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/(tabs)/cart.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/(tabs)/profile.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/(tabs)/search.tsx" afterDir="false" />
+    <list default="true" id="16b444be-5b4a-4726-8b37-cdab3d5f4487" name="Changes" comment="Set up foundational authentication and tab navigation layouts, add SignIn, SignUp, Profile, Cart, and Search screens. Adjust paths and configs for updated structure.">
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/appwrite.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(tabs)/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +31,9 @@
     &quot;accountId&quot;: &quot;64e308d0-827a-4077-8ef1-a073459d0fbf&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 6
@@ -95,7 +94,7 @@
       <workItem from="1751988208585" duration="4505000" />
       <workItem from="1752465573724" duration="4853000" />
       <workItem from="1752474185150" duration="17000" />
-      <workItem from="1752476527614" duration="1292000" />
+      <workItem from="1752476527614" duration="2405000" />
     </task>
     <task id="LOCAL-00001" summary="add default inspection profile to project setup">
       <option name="closed" value="true" />
@@ -137,7 +136,15 @@
       <option name="project" value="LOCAL" />
       <updated>1751992708959</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Set up foundational authentication and tab navigation layouts, add SignIn, SignUp, Profile, Cart, and Search screens. Adjust paths and configs for updated structure.">
+      <option name="closed" value="true" />
+      <created>1752478298602</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1752478298602</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,6 +155,7 @@
     <MESSAGE value="setup nativewind" />
     <MESSAGE value="update paths and configs for Nativewind integration" />
     <MESSAGE value="Integrate custom fonts, images, and icons; configure Tailwind with extended theme settings and Nativewind compatibility." />
-    <option name="LAST_COMMIT_MESSAGE" value="Integrate custom fonts, images, and icons; configure Tailwind with extended theme settings and Nativewind compatibility." />
+    <MESSAGE value="Set up foundational authentication and tab navigation layouts, add SignIn, SignUp, Profile, Cart, and Search screens. Adjust paths and configs for updated structure." />
+    <option name="LAST_COMMIT_MESSAGE" value="Set up foundational authentication and tab navigation layouts, add SignIn, SignUp, Profile, Cart, and Search screens. Adjust paths and configs for updated structure." />
   </component>
 </project>
