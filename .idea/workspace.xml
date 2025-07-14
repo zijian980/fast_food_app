@@ -4,62 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="16b444be-5b4a-4726-8b37-cdab3d5f4487" name="Changes" comment="update paths and configs for Nativewind integration">
-      <change afterPath="$PROJECT_DIR$/assets/fonts/Quicksand-Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/Quicksand-Light.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/Quicksand-Medium.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/Quicksand-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/Quicksand-SemiBold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/arrow-back.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/arrow-down.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/arrow-right.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/bag.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/check.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/clock.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/dollar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/envelope.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/home.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/location.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/logout.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/minus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/pencil.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/person.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/phone.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/plus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/search.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/star.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/trash.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/user.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/avatar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/avocado.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/bacon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/burger-one.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/burger-two.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/buritto.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/cheese.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/coleslaw.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/cucumber.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/empty-state.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/fries.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/login-graphic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/mozarella-sticks.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/mushrooms.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/onion-rings.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/onions.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/pizza-one.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/salad.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/success.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/tomatoes.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/readme/hero.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/readme/jsmpro.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/readme/videokit.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/constants/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images.d.ts" afterDir="false" />
+    <list default="true" id="16b444be-5b4a-4726-8b37-cdab3d5f4487" name="Changes" comment="Integrate custom fonts, images, and icons; configure Tailwind with extended theme settings and Nativewind compatibility.">
+      <change afterPath="$PROJECT_DIR$/components/CartButton.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/_layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/_layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/globals.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/SpaceMono-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,27 +44,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "C:/Users/drack/Downloads/webstorm_proj/fast_food_app",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.general",
-    "ts.external.directory.path": "C:\\Users\\drack\\Downloads\\webstorm_proj\\fast_food_app\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/drack/Downloads/webstorm_proj/fast_food_app&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.general&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\drack\\Downloads\\webstorm_proj\\fast_food_app\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\drack\Downloads\webstorm_proj\fast_food_app" />
@@ -135,7 +86,8 @@
       <updated>1751731814230</updated>
       <workItem from="1751731815562" duration="949000" />
       <workItem from="1751860320647" duration="435000" />
-      <workItem from="1751988208585" duration="4084000" />
+      <workItem from="1751988208585" duration="4505000" />
+      <workItem from="1752465573724" duration="4853000" />
     </task>
     <task id="LOCAL-00001" summary="add default inspection profile to project setup">
       <option name="closed" value="true" />
@@ -169,7 +121,15 @@
       <option name="project" value="LOCAL" />
       <updated>1751991298174</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Integrate custom fonts, images, and icons; configure Tailwind with extended theme settings and Nativewind compatibility.">
+      <option name="closed" value="true" />
+      <created>1751992708959</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1751992708959</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,6 +139,7 @@
     <MESSAGE value="add default inspection profile to project setup" />
     <MESSAGE value="setup nativewind" />
     <MESSAGE value="update paths and configs for Nativewind integration" />
-    <option name="LAST_COMMIT_MESSAGE" value="update paths and configs for Nativewind integration" />
+    <MESSAGE value="Integrate custom fonts, images, and icons; configure Tailwind with extended theme settings and Nativewind compatibility." />
+    <option name="LAST_COMMIT_MESSAGE" value="Integrate custom fonts, images, and icons; configure Tailwind with extended theme settings and Nativewind compatibility." />
   </component>
 </project>
