@@ -1,3 +1,4 @@
+stop at jsmastery food delivery app vid 2:46:30 seeding of data
 # Welcome to your Expo app 👋
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).

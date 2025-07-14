@@ -1,17 +1,17 @@
-import {Account, Avatars, Client, Databases, ID, Query} from "react-native-appwrite";
+import {Account, Avatars, Client, Databases, ID, Query, Storage} from "react-native-appwrite";
 import {CreateUserParams, SignInParams} from "@/type";
 
 export const appwriteConfig = {
     endpoint: process.env.EXPO_PUBLIC_APPWRITE_ENDPOINT!,
     projectId: process.env.EXPO_PUBLIC_APPWRITE_PROJECT_ID!,
     platform: 'com.jsm.foodordering',
-    databaseID: '6874b688003707f43280',
+    databaseId: '6874b688003707f43280',
     bucketId:'6875098c000df60a756a',
     userCollectionId:'6874b6d4000b7ce7aa21',
     categoriesCollectionId:'687504b30020f582639f',
     menuCollectionId:'6875059a0019e6a22789',
     customizationsCollectionId:'6875072a0011f44f9bc4',
-    menuCustomizationCollectionId:'6875085f000823a3faeb',
+    menuCustomizationsCollectionId:'6875085f000823a3faeb',
 }
 
 export const client = new Client();
@@ -23,6 +23,7 @@ client
 
 export const account  = new Account(client);
 export const databases = new Databases(client);
+export const storage = new Storage(client);
 const avatars = new Avatars(client);
 
 export const createUser = async ({email, password, name }: CreateUserParams)=>{
@@ -36,7 +37,7 @@ export const createUser = async ({email, password, name }: CreateUserParams)=>{
         const avatarUrl = avatars.getInitialsURL(name);
 
         return await databases.createDocument(
-            appwriteConfig.databaseID,
+            appwriteConfig.databaseId,
             appwriteConfig.userCollectionId,
             ID.unique(),
             { accountId: newAccount.$id, email,name,avatar: avatarUrl }
@@ -60,7 +61,7 @@ export const getCurrentUser = async ()=>{
         if(!currentAccount) throw Error;
 
         const currentUser = await databases.listDocuments(
-            appwriteConfig.databaseID,
+            appwriteConfig.databaseId,
             appwriteConfig.userCollectionId,
             [Query.equal('accountId',currentAccount.$id)]
         )
