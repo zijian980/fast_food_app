@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="16b444be-5b4a-4726-8b37-cdab3d5f4487" name="Changes" comment="Add Zustand store for authentication, integrate auth state across layouts, and enhance redirect logic">
+    <list default="true" id="16b444be-5b4a-4726-8b37-cdab3d5f4487" name="Changes" comment="Implement tab navigation with custom tab bar, add dynamic icons and labels, and refine tab layout styles.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(tabs)/_layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(tabs)/_layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/appwrite.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/appwrite.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +91,7 @@
       <workItem from="1751988208585" duration="4505000" />
       <workItem from="1752465573724" duration="4853000" />
       <workItem from="1752474185150" duration="17000" />
-      <workItem from="1752476527614" duration="18167000" />
+      <workItem from="1752476527614" duration="19775000" />
     </task>
     <task id="LOCAL-00001" summary="add default inspection profile to project setup">
       <option name="closed" value="true" />
@@ -173,7 +173,15 @@
       <option name="project" value="LOCAL" />
       <updated>1752497415886</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Implement tab navigation with custom tab bar, add dynamic icons and labels, and refine tab layout styles.">
+      <option name="closed" value="true" />
+      <created>1752499032894</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1752499032894</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,6 +197,7 @@
     <MESSAGE value="Implemented Auth Screen" />
     <MESSAGE value="Implemented Auth Functionality" />
     <MESSAGE value="Add Zustand store for authentication, integrate auth state across layouts, and enhance redirect logic" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Zustand store for authentication, integrate auth state across layouts, and enhance redirect logic" />
+    <MESSAGE value="Implement tab navigation with custom tab bar, add dynamic icons and labels, and refine tab layout styles." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement tab navigation with custom tab bar, add dynamic icons and labels, and refine tab layout styles." />
   </component>
 </project>
