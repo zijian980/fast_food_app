@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="16b444be-5b4a-4726-8b37-cdab3d5f4487" name="Changes" comment="Add database seeding functionality with dummy data, extend storage management in Appwrite setup, and integrate seeding trigger into Search screen.">
+    <list default="true" id="16b444be-5b4a-4726-8b37-cdab3d5f4487" name="Changes" comment="Update workspace tasks, refine database seeding logic, and remove seeding trigger from Search screen.&#10;Successfully seed data into databases">
+      <change afterPath="$PROJECT_DIR$/components/MenuCard.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/seed.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/seed.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(tabs)/search.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(tabs)/search.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/appwrite.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/appwrite.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +96,7 @@
       <workItem from="1752476527614" duration="25381000" />
       <workItem from="1753180291692" duration="41000" />
       <workItem from="1753181485911" duration="279000" />
-      <workItem from="1753182384578" duration="1716000" />
+      <workItem from="1753182384578" duration="6173000" />
     </task>
     <task id="LOCAL-00001" summary="add default inspection profile to project setup">
       <option name="closed" value="true" />
@@ -200,7 +202,15 @@
       <option name="project" value="LOCAL" />
       <updated>1752506245807</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Update workspace tasks, refine database seeding logic, and remove seeding trigger from Search screen.&#10;Successfully seed data into databases">
+      <option name="closed" value="true" />
+      <created>1753185634822</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1753185634822</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,6 +229,7 @@
     <MESSAGE value="Implement tab navigation with custom tab bar, add dynamic icons and labels, and refine tab layout styles." />
     <MESSAGE value="Setup database architecture in Appwrite and modify appwrite.ts id" />
     <MESSAGE value="Add database seeding functionality with dummy data, extend storage management in Appwrite setup, and integrate seeding trigger into Search screen." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add database seeding functionality with dummy data, extend storage management in Appwrite setup, and integrate seeding trigger into Search screen." />
+    <MESSAGE value="Update workspace tasks, refine database seeding logic, and remove seeding trigger from Search screen.&#10;Successfully seed data into databases" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update workspace tasks, refine database seeding logic, and remove seeding trigger from Search screen.&#10;Successfully seed data into databases" />
   </component>
 </project>
