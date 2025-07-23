@@ -44,9 +44,6 @@ const Profile = () => {
         }
     }
 
-    const handleEditProfile = () => {
-        router.push('/edit-profile')
-    }
 
     if (isLoading) {
         return (
@@ -103,17 +100,16 @@ const Profile = () => {
             <View className="gap-4 mb-10 mx-2">
                 <CustomButton
                     title="Edit Profile"
-                    onPress={handleEditProfile} //not implemented yet. future feature
                     //leftIcon={<Image source={images.pencil} className="size-5 mr-2" resizeMode="contain" />}
                     style="bg-orange-100 border border-orange-500"
-                    textStyle="text-amber-500 text-1xl"
+                    textStyle="text-orange-500 text-1xl"
                 />
                 <CustomButton
                     title="Logout"
                     onPress={handleLogout}
                     isLoading={isLoggingOut}
                     style="bg-red-100 border border-red-500"
-                    textStyle="text-red-500 text-1xl"
+                    textStyle="text-red-600 text-1xl"
                     leftIcon={<Image source={images.logout} className="size-5 mr-2" resizeMode="contain" />}
                 />
             </View>

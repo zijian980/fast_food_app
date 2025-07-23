@@ -6,6 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="16b444be-5b4a-4726-8b37-cdab3d5f4487" name="Changes" comment="Update Profile screen">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(tabs)/profile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(tabs)/profile.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/readme/jsmpro.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/readme/videokit.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +101,7 @@
       <workItem from="1753213306015" duration="52000" />
       <workItem from="1753213564636" duration="55000" />
       <workItem from="1753213703117" duration="16000" />
-      <workItem from="1753271702147" duration="11181000" />
+      <workItem from="1753271702147" duration="18192000" />
     </task>
     <task id="LOCAL-00001" summary="add default inspection profile to project setup">
       <option name="closed" value="true" />
