@@ -35,7 +35,7 @@ A full-stack Food Delivery app built with React Native, TypeScript, and Tailwind
 
 ## <a name="tech-stack">⚙️ Tech Stack</a>
 
-- **[Appwrite]**  – Backend-as-a-service for auth, database, storage, and serverless functions.
+- **[Appwrite](https://appwrite.io/)**  – Backend-as-a-service for auth, database, storage, and serverless functions.
 
 - **[Expo](https://expo.dev/)** – Framework for building native apps (Android, iOS, web) using React Native.
   
@@ -85,8 +85,8 @@ Make sure you have the following installed on your machine:
 **Cloning the Repository**
 
 ```bash
-git clone https://github.com/adrianhajdin/food_ordering.git
-cd food_ordering
+git clone https://github.com/zijian980/fast_food_app.git
+cd fast_food_app
 ```
 
 **Installation**
