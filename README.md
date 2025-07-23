@@ -2,7 +2,7 @@
   <br />
     <a align="center">
       <img src="assets/readme/homepage_fastfood.jpg" alt="Project Banner 2" width="30%" />
-      <img src="assets/readme/menu_fastfood.jpg" alt="Project Banner 1" width="30%" />
+      <img src="assets/readme/menu_fastfood.jpg" alt="Project Banner 1" width="30%"  />
     </a>
   
   <br />
