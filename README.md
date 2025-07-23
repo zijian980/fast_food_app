@@ -116,5 +116,7 @@ npx expo start
 
 Open your ExpoGO app on your phone and scan the QR code to view the project.
 
-## <a name="demo">🎥 DEMO</a>
+## <a name="demo">🎥 Demo</a>
+
+https://github.com/user-attachments/assets/f9f4a6a4-a127-4775-bb8e-18efbfda1b36
 
