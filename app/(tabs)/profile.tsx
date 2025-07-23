@@ -1,73 +1,124 @@
-import {View, Text, ScrollView, Image, TouchableOpacity, ActivityIndicator} from 'react-native'
-import {SafeAreaView} from "react-native-safe-area-context";
-import CustomHeader from "@/components/CustomHeader";
-import {images} from "@/constants";
-import CustomButton from "@/components/CustomButton";
-import {ProfileFieldProps} from "@/type";
-import cn from "clsx";
-import {useState, useEffect} from 'react';
-import {useRouter} from 'expo-router';
-import useAuthStore from '@/store/auth.store';
+import {View, Text, Image, ScrollView, TouchableOpacity, ActivityIndicator} from 'react-native'
+import {useState, useEffect} from 'react'
+import {useRouter} from 'expo-router'
+import useAuthStore from '@/store/auth.store'
+import CustomHeader from '@/components/CustomHeader'
+import CustomButton from '@/components/CustomButton'
+import {logout} from '@/lib/appwrite'
+import {images} from '@/constants'
 
-const ProfileField = ({label, value, icon}: ProfileFieldProps )=>(
-    <View className="profile-field">
-        <View className="profile-field__icon">
-            <Image source={icon} className="size-6" resizeMode="contain" />
+const ProfileField = ({label, value, icon}: {label: string, value: string, icon: any}) => {
+    return (
+        <View className="profile-field">
+            <View className="profile-field__icon">
+                <Image source={icon} className="size-6" resizeMode="contain" />
+            </View>
+            <View>
+                <Text className="body-medium text-gray-500">{label}</Text>
+                <Text className="paragraph-semibold text-dark-100">{value || 'Not provided'}</Text>
+            </View>
         </View>
-        <View>
-            <Text className="body-medium text-gray-500">{label}</Text>
-            <Text className="paragraph-semibold text-dark-100">{value}</Text>
-        </View>
-    </View>
-)
+    )
+}
+
 const Profile = () => {
+    const router = useRouter()
+    const {user, isLoading, fetchAuthenticatedUser, setIsAuthenticated, setUser} = useAuthStore()
+    const [isLoggingOut, setIsLoggingOut] = useState(false)
+
+   /*useEffect(() => {
+        fetchAuthenticatedUser()
+    }, [])*/
+
+    const handleLogout = async () => {
+        try {
+            setIsLoggingOut(true)
+            await logout()
+            setIsAuthenticated(false)
+            setUser(null)
+            router.replace('/(auth)/sign-in')
+        } catch (error) {
+            console.error('Logout error:', error)
+        } finally {
+            setIsLoggingOut(false)
+        }
+    }
+
+    const handleEditProfile = () => {
+        router.push('/edit-profile')
+    }
+
+    if (isLoading) {
+        return (
+            <View className="flex-1 flex-center">
+                <ActivityIndicator size="large" color="#FF6B00" />
+            </View>
+        )
+    }
 
     return (
-        <SafeAreaView className="bg-white h-full">
-            <ScrollView className="pb-28 px-5 pt-5">
-                <CustomHeader title="Profile" />
-                <View className="flex flex-col items-center relative mt-2">
-                    <Image source={images.avatar} className=" size-32 rounded-full" resizeMode="contain" />
+        <ScrollView className="flex-1 px-4 pt-10 bg-white">
+            <CustomHeader title="Profile" />
+
+            <View className="items-center mb-8">
+                <View className="profile-avatar">
+                    <Image
+                        source={images.avatar}//{{uri: user?.avatar}}
+                        className="size-28 rounded-full"
+                        resizeMode="cover"
+                    />
                 </View>
 
-                <View className="mt-6 p-5 ">
-                        <ProfileField
-                            label="Full Name"
-                            value="John Doe"
-                            icon={images.user}
-                        />
-                        <ProfileField
-                            label="Email"
-                            value="john.doe@example.com"
-                            icon={images.envelope}
-                        />
-                        <ProfileField
-                            label="Phone Number"
-                            value="+1 234 567 8900"
-                            icon={images.phone}
-                        />
-                        <ProfileField
-                            label="Address"
-                            value="123 Main Street, City"
-                            icon={images.location}
-                        />
-                        <View className="border-t border-gray-300 my-2" />
+            </View>
 
-                    </View>
+            <View className="mb-8 mx-3.5">
 
+                <ProfileField
+                    label="Full Name"
+                    value={user?.name || ''}
+                    icon={images.user}
+                />
+                <ProfileField
+                    label="Email"
+                    value={user?.email || ''}
+                    icon={images.envelope}
+                />
+                <ProfileField
+                    label="Phone Number"
+                    value={user?.phone || ''}
+                    icon={images.phone}
+                />
+                <ProfileField
+                    label="Address 1 - (Home)"
+                    value={user?.address || ''}
+                    icon={images.location}
+                />
+                <ProfileField
+                    label="Address 2 - (Office)"
+                    value={user?.address || ''}
+                    icon={images.location}
+                />
+            </View>
+
+            <View className="gap-4 mb-10 mx-2">
                 <CustomButton
                     title="Edit Profile"
-                    style="bg-primary/20"
-                    textStyle="text-primary"
+                    onPress={handleEditProfile} //not implemented yet. future feature
+                    //leftIcon={<Image source={images.pencil} className="size-5 mr-2" resizeMode="contain" />}
+                    style="bg-orange-100 border border-orange-500"
+                    textStyle="text-amber-500 text-1xl"
                 />
                 <CustomButton
                     title="Logout"
+                    onPress={handleLogout}
+                    isLoading={isLoggingOut}
+                    style="bg-red-100 border border-red-500"
+                    textStyle="text-red-500 text-1xl"
                     leftIcon={<Image source={images.logout} className="size-5 mr-2" resizeMode="contain" />}
-                    style="bg-error/20"
-                    textStyle="text-error"
                 />
-            </ScrollView>
-        </SafeAreaView>
+            </View>
+        </ScrollView>
     )
 }
+
 export default Profile
