@@ -1,8 +1,10 @@
 <div align="center">
   <br />
-    <a>
-      <img src="assets/readme/hero.png" alt="Project Banner">
+    <a align="center">
+      <img src="assets/readme/homepage_fastfood.jpg" alt="Project Banner 2" width="30%" />
+      <img src="assets/readme/menu_fastfood.jpg" alt="Project Banner 1" width="30%" />
     </a>
+  
   <br />
 
   <div>
@@ -114,5 +116,5 @@ npx expo start
 
 Open your ExpoGO app on your phone and scan the QR code to view the project.
 
-## <a name="demo">🔗 DEMO</a>
+## <a name="demo">🎥 DEMO</a>
 
