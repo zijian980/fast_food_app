@@ -53,7 +53,7 @@ A full-stack Food Delivery app built with React Native, TypeScript, and Tailwind
 
 ## <a name="features">🔋 Features</a>
 
-### Features of the Mobile Movie AppProject
+### Features of the Mobile Fast Food App Project
 
 👉 **Google Authentication**: Easy and secure authentication.
 
